@@ -1,4 +1,4 @@
---[[
+   --[[
 Options:
 
 Binding Modes: "Hold", "Toggle"
@@ -8,12 +8,12 @@ Point Modes: "Generic", "Center", "Scalar", "Full", "Partial", "Root"
 
 local arthemis = {
     whitelist = {
-        license = ""
+        license = "YOUR KEY HERE"
     },
     version = "1.0"
-}
-
-local checks = {
+ }
+ 
+ local checks = {
     ko = false;
     wall = false;
     visible = false;
@@ -23,9 +23,9 @@ local checks = {
         toggled = false;
         max = 1000;
     };
-};
-
-local silent_aim = {
+ };
+ 
+ local silent_aim = {
     toggled = true;
     binding = {
         key = "E";
@@ -63,9 +63,9 @@ local silent_aim = {
             };
         };
     };
-};
-
-local tracing = {
+ };
+ 
+ local tracing = {
     toggled = true;
     binding = {
         key = "Q";
@@ -117,22 +117,22 @@ local tracing = {
             };
         };
     };
-};
-
-local resolver = {
+ };
+ 
+ local resolver = {
     toggled = true;
     key = "T";
     active = false;
-};
-
-local walkspeed = {
+ };
+ 
+ local walkspeed = {
     toggled = true;
     key = "Z";
     bypass = false;
     amount = 324;
-};
-
-local inventory_sorter = {
+ };
+ 
+ local inventory_sorter = {
     toggled = true;
     key = "Equals";
     slots = {
@@ -147,9 +147,9 @@ local inventory_sorter = {
         ["9"] = "";
         ["0"] = "[Katana]";
     };
-};
-
-local triggerbot = {
+ };
+ 
+ local triggerbot = {
     toggled = false;
     key = "J";
     use_keybind = false;
@@ -165,9 +165,9 @@ local triggerbot = {
         color = Color3.fromRGB(255, 0, 0);
         transparency = 0.5;
     };
-};
-
-local esp = {
+ };
+ 
+ local esp = {
     team_check = false;
     name = {
         show_display_name = true;
@@ -181,5 +181,33 @@ local esp = {
         dynamic = true;
         show_percentage = true;
     };
+ };
+ 
+ local spread_modifications = { 
+    toggled = false; 
+    reduction = 100;
+    whitelisted = { 
+        toggled = false; 
+        guns = { 
+            -- // ['Revolver'] = 100,
+            -- // ['Double-Barrel SG'] = 75,
+            -- // ['Katana'] = 50
+        } 
+    } 
+ };
+
+ local hitbox_expander = {
+    toggled = true;
+    size = {
+        amount = 25;
+        scaling = {
+            toggled = false;
+            interval = 0.1;
+            min = 10;
+            max = 40;
+        };
+    };
+    target_part = "Head";
 };
-loadstring(game:HttpGet("https://raw.githubusercontent.com/aladinperth/Arthemis/refs/heads/main/52014000098570448689"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aladinperth/Arthemis/refs/heads/main/52014000098570448689.lua"))()
