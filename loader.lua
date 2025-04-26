@@ -197,7 +197,7 @@ local arthemis = {
  };
 
  local hitbox_expander = {
-    toggled = true;
+    toggled = false;
     size = {
         amount = 25;
         scaling = {
