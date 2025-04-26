@@ -192,8 +192,8 @@ local arthemis = {
             -- // ['Revolver'] = 100,
             -- // ['Double-Barrel SG'] = 75,
             -- // ['Katana'] = 50
-        } 
-    } 
+        }; 
+    };
  };
 
  local hitbox_expander = {
