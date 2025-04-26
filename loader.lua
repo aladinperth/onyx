@@ -28,7 +28,7 @@ local arthemis = {
  local silent_aim = {
     toggled = true;
     binding = {
-        key = "E";
+        key = "P";
         mode = "Toggle";
     };
     hit_chance = math.huge;
