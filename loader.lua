@@ -1,4 +1,4 @@
-   --[[
+--[[
 Options:
 
 Binding Modes: "Hold", "Toggle"
@@ -7,13 +7,10 @@ Point Modes: "Generic", "Center", "Scalar", "Full", "Partial", "Root"
 ]]
 
 local arthemis = {
-    whitelist = {
-        license = "YOUR KEY HERE"
-    },
-    version = "1.0"
- }
+    version = "1.0";
+};
  
- local checks = {
+local checks = {
     ko = false;
     wall = false;
     visible = false;
@@ -23,49 +20,9 @@ local arthemis = {
         toggled = false;
         max = 1000;
     };
- };
+};
  
- local silent_aim = {
-    toggled = true;
-    binding = {
-        key = "P";
-        mode = "Toggle";
-    };
-    hit_chance = math.huge;
-    prediction = {
-        amount = 0;
-    };
-    aiming = {
-        part = "Head";
-        multi_part = {
-            toggled = false;
-            parts = {"Head", "HumanoidRootPart"};
-        };
-        closet = "None";
-        closet_point_mode = "Generic";
-        auto_select = {
-            toggled = true;
-            interval = 0.03;
-        };
-        fov = {
-            toggled = true;
-            radius = 240;
-            visible = true;
-            color = Color3.fromRGB(255, 255, 255);
-            transparency = 1;
-            filled = false;
-            thickness = 1;
-            outline = {
-                toggled = true;
-                color = Color3.fromRGB(0, 0, 0);
-                thickness = 1;
-                transparency = 1;
-            };
-        };
-    };
- };
- 
- local tracing = {
+local tracing = {
     toggled = true;
     binding = {
         key = "Q";
@@ -117,22 +74,22 @@ local arthemis = {
             };
         };
     };
- };
+};
  
- local resolver = {
+local resolver = {
     toggled = true;
     key = "T";
     active = false;
- };
+};
  
- local walkspeed = {
+local walkspeed = {
     toggled = true;
     key = "Z";
     bypass = false;
     amount = 324;
- };
+};
  
- local inventory_sorter = {
+local inventory_sorter = {
     toggled = true;
     key = "Equals";
     slots = {
@@ -147,9 +104,9 @@ local arthemis = {
         ["9"] = "";
         ["0"] = "[Katana]";
     };
- };
+};
  
- local triggerbot = {
+local triggerbot = {
     toggled = false;
     key = "J";
     use_keybind = false;
@@ -165,9 +122,9 @@ local arthemis = {
         color = Color3.fromRGB(255, 0, 0);
         transparency = 0.5;
     };
- };
+};
  
- local esp = {
+local esp = {
     team_check = false;
     name = {
         show_display_name = true;
@@ -181,33 +138,5 @@ local arthemis = {
         dynamic = true;
         show_percentage = true;
     };
- };
- 
- local spread_modifications = { 
-    toggled = false; 
-    reduction = 100;
-    whitelisted = { 
-        toggled = false; 
-        guns = { 
-            -- // ['Revolver'] = 100,
-            -- // ['Double-Barrel SG'] = 75,
-            -- // ['Katana'] = 50
-        }; 
-    };
- };
-
- local hitbox_expander = {
-    toggled = false;
-    size = {
-        amount = 25;
-        scaling = {
-            toggled = false;
-            interval = 0.1;
-            min = 10;
-            max = 40;
-        };
-    };
-    target_part = "Head";
 };
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/aladinperth/Arthemis/refs/heads/main/52014000098570448689.lua"))()
