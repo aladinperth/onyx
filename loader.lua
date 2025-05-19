@@ -139,4 +139,5 @@ local esp = {
         show_percentage = true;
     };
 };
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/aladinperth/Arthemis/refs/heads/main/52014000098570448689.lua"))()
