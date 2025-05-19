@@ -6,11 +6,11 @@ Closet Modes: "None", "Part", "Point"
 Point Modes: "Generic", "Center", "Scalar", "Full", "Partial", "Root"
 ]]
 
-local arthemis = {
+getgenv().arthemis = {
     version = "1.0";
 };
  
-local checks = {
+getgenv().checks = {
     ko = false;
     wall = false;
     visible = false;
@@ -22,7 +22,7 @@ local checks = {
     };
 };
  
-local tracing = {
+getgenv().tracing = {
     toggled = true;
     binding = {
         key = "Q";
@@ -76,20 +76,20 @@ local tracing = {
     };
 };
  
-local resolver = {
+getgenv().resolver = {
     toggled = true;
     key = "T";
     active = false;
 };
  
-local walkspeed = {
+getgenv().walkspeed = {
     toggled = true;
     key = "Z";
     bypass = false;
     amount = 324;
 };
  
-local inventory_sorter = {
+getgenv().inventory_sorter = {
     toggled = true;
     key = "Equals";
     slots = {
@@ -106,7 +106,7 @@ local inventory_sorter = {
     };
 };
  
-local triggerbot = {
+getgenv().triggerbot = {
     toggled = false;
     key = "J";
     use_keybind = false;
@@ -124,7 +124,7 @@ local triggerbot = {
     };
 };
  
-local esp = {
+getgenv().esp = {
     team_check = false;
     name = {
         show_display_name = true;
